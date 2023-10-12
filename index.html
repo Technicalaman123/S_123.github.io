@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Question-2: who was Lencho?</h1>
+    <form id="quizForm">
+        <input type="radio" name="answer" value="a"> (a) Lencho was a home guard👮‍♂️<br>
+        <input type="radio" name="answer" value="b"> (b) Lencho was a poor farmer👴<br>
+        <input type="radio" name="answer" value="c"> (c) Lencho was a rich man😈👨<br>
+        <input type="radio" name="answer" value="d"> (d) None of the above👻<br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var answer = document.querySelector('input[name="answer"]:checked').value;
+            if (answer) {
+                // Redirect to Instagram after submitting the answer
+                window.location.href = "https://technicalaman123.github.io/Favorite.Github.io/";
+            } else {
+                alert("Please select an answer before submitting.");
+            }
+        });
+    </script>
+</body>
+</html>
